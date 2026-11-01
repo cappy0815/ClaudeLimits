@@ -4,6 +4,8 @@ Kleines Windows-Tool, das dein Claude-Nutzungskontingent direkt im Programm-Symb
 
 **Aktuelle Version:** 1.4.1 · [Download](../../releases/latest)
 
+![Claude Limits: Hauptfenster und Statistik](ClaudeLimitsScreenshot.png)
+
 ## Funktionen
 
 - Session (5 Stunden) und Woche auf einen Blick, mit Countdown bis zum Reset
