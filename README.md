@@ -2,7 +2,7 @@
 
 Kleines Windows-Tool, das dein Claude-Nutzungskontingent direkt im Programm-Symbol der Taskleiste anzeigt: Ring und Prozentzahl in Ampelfarbe (grün unter 50 %, gelb ab 50 %, rot ab 80 %).
 
-**Aktuelle Version:** 1.5 · [Download v1.5](https://cappy0815.github.io/downloads/Claude_Limits_v1.5.exe)
+**Aktuelle Version:** 1.5.1 · [Download v1.5.1](https://cappy0815.github.io/downloads/Claude_Limits_v1.5.1.exe)
 
 ![Claude Limits: Hauptfenster und Statistik](ClaudeLimitsScreenshot.png)
 
@@ -90,7 +90,7 @@ recorder:
 
 In den Optionen (⚙) unter **Updates**: „Automatisch prüfen“ schaut beim Start und danach einmal täglich nach, „Jetzt prüfen“ sofort. Gibt es eine neue Version, steht unten im Fenster **⬆ Update** – ein Klick öffnet die Download-Seite der Version. Installiert wird nichts automatisch.
 
-Geprüft wird das neueste veröffentlichte Release dieses Repositorys (Tag im Format `v1.5`, `v1.5.1` …).
+Geprüft wird die Versionsdatei [`claude-limits.json`](https://cappy0815.github.io/downloads/claude-limits.json) auf der Projektseite; ist sie nicht erreichbar, das neueste Release dieses Repositorys.
 
 ## Installation
 
