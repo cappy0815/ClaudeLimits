@@ -2,7 +2,7 @@
 
 Kleines Windows-Tool, das dein Claude-Nutzungskontingent direkt im Programm-Symbol der Taskleiste anzeigt: Ring und Prozentzahl in Ampelfarbe (grün unter 50 %, gelb ab 50 %, rot ab 80 %).
 
-**Aktuelle Version:** 1.4.1 · [Download](../../releases/latest)
+**Aktuelle Version:** 1.5 · [Download v1.5](https://cappy0815.github.io/downloads/Claude_Limits_v1.5.exe)
 
 ![Claude Limits: Hauptfenster und Statistik](ClaudeLimitsScreenshot.png)
 
@@ -12,7 +12,9 @@ Kleines Windows-Tool, das dein Claude-Nutzungskontingent direkt im Programm-Symb
 - Programm-Symbol in der Taskleiste als Live-Anzeige (Session, Woche oder beides), optional Fortschrittsbalken im Taskleisten-Knopf
 - Kompaktes oder großes Fenster, optional immer im Vordergrund
 - Statistik: Verlauf (24 Std. / 7 / 30 Tage), Verbrauch nach Wochentag und Tageszeit, Spitzenwert, wie oft das Limit erreicht wurde
+- Extra-Guthaben: gekaufte Zusatz-Credits (verbraucht / Monatslimit) als eigene Zeile, in der Statistik als eigene Linie (mit Home Assistant als Quelle)
 - Optional mit Windows starten (minimiert) und bei neuer Nutzung kurz einblenden
+- Update-Prüfung: automatisch (beim Start, dann täglich) oder von Hand
 
 ## Datenquellen
 
@@ -47,6 +49,7 @@ Danach muss es in Home Assistant Sensoren geben, deren Anzeigename so endet:
 | `Week Usage` | Auslastung Woche in % |
 | `Session Reset Time` | Zeitpunkt des nächsten Session-Resets |
 | `Weekly Reset Time` | Zeitpunkt des nächsten Wochen-Resets |
+| `Extra Usage …` | optional: Extra-Guthaben (Enabled, Credits, Limit, %) |
 
 Claude Limits findet die Sensoren selbst über diese Namen. Entitäts-IDs musst du nicht eintragen.
 
@@ -82,6 +85,12 @@ recorder:
 | Home Assistant nicht erreichbar | Adresse prüfen; neuer Versuch automatisch |
 | Claude-Sensoren nicht gefunden | Integration „Claude Usage“ fehlt oder die Sensoren heißen anders |
 | Sensor liefert noch keinen Wert | Sensoren „nicht verfügbar“, z. B. direkt nach einem HA-Neustart |
+
+## Updates
+
+In den Optionen (⚙) unter **Updates**: „Automatisch prüfen“ schaut beim Start und danach einmal täglich nach, „Jetzt prüfen“ sofort. Gibt es eine neue Version, steht unten im Fenster **⬆ Update** – ein Klick öffnet die Download-Seite der Version. Installiert wird nichts automatisch.
+
+Geprüft wird das neueste veröffentlichte Release dieses Repositorys (Tag im Format `v1.5`, `v1.5.1` …).
 
 ## Installation
 
